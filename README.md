@@ -8,11 +8,31 @@ Get started commit of alfarnex startup agency website
 ### Built With
 
     Next.js - Full stack development framework 
-    Headless UI - A react library for icons
+    React-icons - A react library for icons
 
 ### Objectives 
 
-- [x]
+- Home page []
+    - Header []
+        - logo []
+        - Blured []
+        - Navlink []
+        - Theme changer []
+        - Language translator []
+        - Login []
+    - Hero []
+    - Our Story []
+    - Services []
+    - How we work []
+    - Prices []
+    - Testimonials []
+    - Footer []
+- Services []
+- Our Work []
+- Price []
+- Store []
+- Resources []
+- Job []
 
 ### Commit details
 
