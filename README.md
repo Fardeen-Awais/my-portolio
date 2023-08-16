@@ -9,8 +9,8 @@ Get started commit of alfarnex startup agency website
 
     Next.js - Full stack development framework 
     React-icons - A react library for icons
-    Next-UI - A UI library
-    React-icon - Best icons library
+    ShadCdn - A UI library
+    React-icon - Best icons library [https://react-icons.github.io/react-icons/icons?name=di]
     Supabase or PostgresSQl with Neon
 
 ### Objectives 
