@@ -1,13 +1,26 @@
-import Image from "next/image";
-import Link from "next/link";
-import { footerLinks } from "@/constant";
+import Image from 'next/image';
+import Link from 'next/link';
+import { footerLinks } from '@/constant';
 
 const Footer = () => (
-  <footer className='flex flex-col -black-100  mt-5 border-t border-gray-100'>
-    <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
-      <div className='flex flex-col justify-start items-start gap-6'>
-        <Image src='/logo.svg' alt='logo' width={118} height={18} className='object-contain' />
-        <p className='-base'>
+  <footer className="flex flex-col -black-100  mt-5 border-t border-gray-100">
+    <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
+      <div className="flex flex-col justify-start items-start gap-6">
+        <Image
+          src="./LightLogo.svg"
+          alt="logo"
+          width={118}
+          height={18}
+          className="object-contain dark:hidden logo"
+        />
+        <Image
+          src="./DarkLogo.svg"
+          alt="logo"
+          width={118}
+          height={18}
+          className="object-contain hidden dark:flex logo"
+        />
+        <p className="-base">
           Alfarnex 2023 <br />
           All Rights Reserved &copy;
         </p>
@@ -19,11 +32,7 @@ const Footer = () => (
             <h3 className="font-bold">{item.title}</h3>
             <div className="flex flex-col gap-5">
               {item.links.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.url}
-                  className="-gray-500"
-                >
+                <Link key={link.title} href={link.url} className="-gray-500">
                   {link.title}
                 </Link>
               ))}
@@ -33,7 +42,7 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className='flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10'>
+    <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
       <p>@2023 Alfarnex. All rights reserved</p>
 
       <div className="footer__copyrights-link">
