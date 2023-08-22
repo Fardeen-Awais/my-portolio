@@ -8,6 +8,7 @@ const Logo = () => {
         </div>
         <div className='hidden dark:flex items-center justify-center logo w-20 h-20 sm:w-24 sm:h-24'>
           <Image src={"/alfarnex_dark.webp"} quality={100} width={500} height={500} alt='Logo for Dark' />
+
     </div>
     </>
   )
