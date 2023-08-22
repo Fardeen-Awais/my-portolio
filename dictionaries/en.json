@@ -1,0 +1,15 @@
+{
+  "Hero": {
+    "title": "Web Agency for Developing Business",
+    "description": "Make your Business Web application with our best developers. Helping Businesses to get their website application with security.",
+    "getStartedButton": "Get Started",
+    "exploreButton": "Explore Us"
+  },
+  "Navlinks": {
+    "home": "Home",
+    "work": "Work",
+    "prices": "Prices",
+    "store": "Store",
+    "resources": "Resources"
+  }
+}

@@ -9,6 +9,7 @@ import { SlDocs } from 'react-icons/sl'
 import Image from 'next/image'
 import { ModeToggle } from './Theme'
 import Logo from '../Logo'
+import LocaleSwitcher from '../local-switcher'
 
 const Navbar = () => {
   return (
@@ -42,7 +43,8 @@ const Navbar = () => {
 
         <div className='Customizer flex items-center  gap-x-5 px-3'>
           <div className='flex gap-x-5 items-center'>
-            <div><HiLanguage className='h-5 w-5' /></div>
+            {/* <div><HiLanguage className='h-5 w-5' /></div> */}
+            <div><LocaleSwitcher /></div>
             <div><ModeToggle /></div>
           </div>
           <div className='hidden sm:flex'>Login</div>

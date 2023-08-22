@@ -1,0 +1,15 @@
+{
+  "Hero": {
+    "title": "为业务发展而设的网络代理",
+    "description": "与我们的顶级开发人员一起创建您的业务网络应用程序。帮助企业以安全方式获得他们的网站应用程序。",
+    "getStartedButton": "开始",
+    "exploreButton": "了解更多"
+  },
+  "Navlinks": {
+    "home": "主页",
+    "work": "工作",
+    "prices": "价格",
+    "store": "商店",
+    "resources": "资源"
+  }
+}
