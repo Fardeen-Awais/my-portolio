@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
-import { getDictionary } from '@/get-dictionary'
+import HeroImage from "public/hero.png"
 
 interface HeroProps {
   Herodata: {
@@ -27,8 +27,9 @@ const Hero : React.FC<HeroProps> = ({ Herodata }) =>  {
           <Button variant="outline">Explore Us</Button> {/* redirect to work:: that explain how we work  */}
         </div>
       </div>
-      <div className='w-96 h-96 sm:w-full sm:h-full'><Image
-        src="/hero.png"
+      <div className='w-96 h-96 sm:w-full sm:h-full'>
+        <Image
+        src={HeroImage}
         alt="Hero Image"
         width={1000}
         height={1000}
@@ -40,7 +41,8 @@ const Hero : React.FC<HeroProps> = ({ Herodata }) =>  {
         style={{
           objectFit: "cover",
         }}
-      /></div>
+      />
+      </div>
     </div>
 
   )

@@ -36,6 +36,9 @@ export function middleware(request: NextRequest) {
   )
   // console.log(pathnameIsMissingLocale);
   // Redirect if there is no locale
+  if (pathname.endsWith(".webp"))
+  return NextResponse.next()
+
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request)
 
@@ -52,5 +55,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|public|favicon.ico).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 }
