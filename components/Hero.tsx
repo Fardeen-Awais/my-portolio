@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
 import HeroImage from "public/hero.png"
-
+import { motion } from 'framer-motion'
+import { headContainerAnimation, headTextAnimation,headContentAnimation } from '@/lib/motion'
 interface HeroProps {
   Herodata: {
     title: string;
@@ -27,6 +29,7 @@ const Hero : React.FC<HeroProps> = ({ Herodata }) =>  {
           <Button variant="outline">Explore Us</Button> {/* redirect to work:: that explain how we work  */}
         </div>
       </div>
+
       <div className='w-96 h-96 sm:w-full sm:h-full'>
         <Image
         src={HeroImage}
