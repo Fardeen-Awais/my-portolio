@@ -17,8 +17,10 @@ export default async function Home({
   // console.log(Herodata)
   return (
     <main className='bg-background text-foreground overflow-hidden'>
+     
         <Hero Herodata={Herodata}/>
         <Storyline/>
+      
     </main>
   );
 }
