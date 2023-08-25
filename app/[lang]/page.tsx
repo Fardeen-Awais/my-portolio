@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Hero from '@/components/Hero';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/get-dictionary';
+import Loading from './loading';
+import Storyline from '@/components/Storyline';
 
 interface HomeProps {
   params: { lang: Locale };
@@ -15,7 +17,8 @@ export default async function Home({
   // console.log(Herodata)
   return (
     <main className='bg-background text-foreground overflow-hidden'>
-      <Hero Herodata={Herodata}/>
+        <Hero Herodata={Herodata}/>
+        <Storyline/>
     </main>
   );
 }

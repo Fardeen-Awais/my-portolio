@@ -8,8 +8,8 @@ import { BsShop } from 'react-icons/bs'
 import { SlDocs } from 'react-icons/sl'
 import Image from 'next/image'
 import { ModeToggle } from './Theme'
-import Logo from '../Logo'
-import LocaleSwitcher from '../local-switcher'
+import Logo from './Logo'
+import LocaleSwitcher from './local-switcher'
 
 const Navbar = () => {
   return (

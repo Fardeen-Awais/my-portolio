@@ -6,10 +6,10 @@ const Logo = () => {
   return (
     <>
      <div className='dark:hidden flex items-center justify-center logo w-20 h-20 sm:w-24 sm:h-24'>
-          <Image src={LightLogo} quality={100} width={500} height={500} alt='Logo for Light' />
+          <Image src={LightLogo} quality={70} width={300} height={300} alt='Logo for Light' />
         </div>
         <div className='hidden dark:flex items-center justify-center logo w-20 h-20 sm:w-24 sm:h-24'>
-          <Image src={DarkLogo} quality={100} width={500} height={500} alt='Logo for Dark' />
+          <Image src={DarkLogo} quality={70} width={300} height={300} alt='Logo for Dark' />
 
     </div>
     </>

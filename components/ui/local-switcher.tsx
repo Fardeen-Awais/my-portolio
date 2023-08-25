@@ -2,7 +2,7 @@
 import React from 'react';
 import { usePathname, useRouter } from 'next/navigation' // Import the useRouter hook
 import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu";
-import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel } from './ui/dropdown-menu';
+import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel } from './dropdown-menu';
 import { HiLanguage } from 'react-icons/hi2';
 import { i18n } from '@/i18n-config';
 

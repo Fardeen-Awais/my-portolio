@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { footerLinks } from "@/constant";
-import Logo from "../Logo";
+import Logo from "./Logo";
 
 const Footer = () => (
   <footer className='flex flex-col -black-100  mt-5 border-t border-gray-100'>
