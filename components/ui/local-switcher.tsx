@@ -35,7 +35,7 @@ export default function DropdownMenuCheckboxes() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <div><HiLanguage/></div>
+        <button id="radix-:R2tjda:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><HiLanguage/></button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-56">

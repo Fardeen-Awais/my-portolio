@@ -15,31 +15,32 @@ const Navbar = () => {
   return (
     <header className='sticky top-0 z-20 border-b border-transparent bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity duration-200 ease-in-out mx-auto md:px-5 h-20 flex items-center justify-between'>
       <nav className='flex justify-between items-center w-full py-4'>
-        <Logo/>
-        <div className='Navlinks sm:flex hidden'>
-          <ol className='flex justify-center items-center md:gap-x-10 sm:gap-x-6 text-xs'>
-            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+        <Logo />
+        <ul className='sm:flex hidden justify-center items-center md:gap-x-10 sm:gap-x-6 text-xs'>
+          <Link className='flex opacity-90 hover:opacity-100 transition-all' href={'/'}>
+            <li className='flex flex-col justify-center items-center gap-1'>
               <BiHomeAlt2 className="w-5 h-5" />
-              <li>Home</li>
-            </Link>
-            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-              <MdWorkOutline className='w-5 h-5'/>
-              <li>Work</li>
-            </Link>
-            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-              <BsCreditCard2Back className='w-5 h-5'/>
-              <li>Prices</li>
-            </Link>
-            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-              <BsShop className='w-5 h-5'/>
-              <li>Store</li>
-            </Link>
-            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-              <SlDocs className='w-5 h-5'/>
-              <li>Resources</li>
-            </Link>
-          </ol>
-        </div>
+              Home
+            </li>
+          </Link>
+          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+            <li className='flex flex-col justify-center items-center gap-1'>
+              <MdWorkOutline className='w-5 h-5' />
+              Work
+            </li>
+          </Link>
+          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+            <li className='flex flex-col justify-center items-center gap-1'><BsCreditCard2Back className='w-5 h-5' />
+              Prices</li>
+          </Link>
+          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+            <li className='flex flex-col justify-center items-center gap-1'><BsShop className='w-5 h-5' />
+              Store</li>
+          </Link>
+          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+            <li className='flex flex-col justify-center items-center gap-1'><SlDocs className='w-5 h-5' />Resources</li>
+          </Link>
+        </ul>
 
         <div className='Customizer flex items-center  gap-x-5 px-3'>
           <div className='flex gap-x-5 items-center'>
