@@ -74,22 +74,6 @@
     @apply bg-background text-foreground;
   }
 }
-.App {
-  position: relative;
-  overflow-x: clip;
-}
-.App > :nth-child(1) {
-  background: var(--bg-of-hero);
-  position: relative;
-}
-.gradient {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  background: linear-gradient(97.05deg, #fff 3.76%, #000 100%);
-  filter: blur(100px);
-  border-radius: 100px;
-}
 .footer {
   @apply flex flex-col text-gray-950  mt-5 border-t border-gray-100;
 }
