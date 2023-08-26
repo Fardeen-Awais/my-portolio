@@ -5,6 +5,7 @@ import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu";
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel } from './dropdown-menu';
 import { HiLanguage } from 'react-icons/hi2';
 import { i18n } from '@/i18n-config';
+import { Button } from './button';
 
 type Checked = DropdownMenuCheckboxItemProps["checked"];
 
@@ -35,7 +36,9 @@ export default function DropdownMenuCheckboxes() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button id="radix-:R2tjda:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><HiLanguage/></button>
+        <button  id="lngicon" title="Language Switcher">
+       <HiLanguage/>
+       </button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-56">

@@ -17,29 +17,34 @@ const Navbar = () => {
       <nav className='flex justify-between items-center w-full py-4'>
         <Logo />
         <ul className='sm:flex hidden justify-center items-center md:gap-x-10 sm:gap-x-6 text-xs'>
-          <Link className='flex opacity-90 hover:opacity-100 transition-all' href={'/'}>
-            <li className='flex flex-col justify-center items-center gap-1'>
+          <li className='flex flex-col justify-center items-center gap-1'>
+            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
               <BiHomeAlt2 className="w-5 h-5" />
               Home
-            </li>
-          </Link>
-          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-            <li className='flex flex-col justify-center items-center gap-1'>
+            </Link>
+          </li>
+          <li className='flex flex-col justify-center items-center gap-1'>
+            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
               <MdWorkOutline className='w-5 h-5' />
               Work
-            </li>
-          </Link>
-          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-            <li className='flex flex-col justify-center items-center gap-1'><BsCreditCard2Back className='w-5 h-5' />
-              Prices</li>
-          </Link>
-          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-            <li className='flex flex-col justify-center items-center gap-1'><BsShop className='w-5 h-5' />
-              Store</li>
-          </Link>
-          <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
-            <li className='flex flex-col justify-center items-center gap-1'><SlDocs className='w-5 h-5' />Resources</li>
-          </Link>
+            </Link>
+          </li>
+          <li className='flex flex-col justify-center items-center gap-1'><BsCreditCard2Back className='w-5 h-5' />
+            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+              Prices
+            </Link>
+          </li>
+          <li className='flex flex-col justify-center items-center gap-1'><BsShop className='w-5 h-5' />
+            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+              Store
+            </Link>
+          </li>
+          <li className='flex flex-col justify-center items-center gap-1'>
+            <Link className='flex flex-col items-center gap-1 opacity-90 hover:opacity-100 transition-all' href={'/'}>
+              <SlDocs className='w-5 h-5' />
+              Resources
+            </Link>
+          </li>
         </ul>
 
         <div className='Customizer flex items-center  gap-x-5 px-3'>

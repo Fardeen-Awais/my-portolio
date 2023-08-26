@@ -2,8 +2,8 @@
 import React from 'react'
 import WebVitals from '../ui/webvitals'
 import { motion } from 'framer-motion'
-import { slideAnimation,fadeAnimation } from '@/lib/motion'
-import { Repeat } from 'lucide-react'
+import { slideAnimation } from '@/lib/motion'
+
 const Storyline01 = () => {
   return (
     <motion.div  variants={slideAnimation("up")} initial="initial" exit="exit" whileInView="animate" className='flex flex-col gap-8 max-w-7xl justify-center items-center min-h-screen px-5 '>
