@@ -3,18 +3,9 @@ import React from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
 import HeroImage from "public/hero.webp"
-interface HeroProps {
-  Herodata: {
-    title: string;
-    description: string;
-    getStartedButton: string;
-    exploreButton: string;
-  };
-}
-
+import { HeroProps } from '@/types'
 
 const Hero : React.FC<HeroProps> = ({ Herodata }) =>  {
-
   return (
     <section
      className='flex flex-col sm:flex-row justify-evenly sm:justify-between items-center max-w-7xl mx-auto p-5 sm:p-10 gap-10 min-h-screen w-full'>
