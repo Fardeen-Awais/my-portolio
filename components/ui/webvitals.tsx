@@ -15,10 +15,9 @@ export default function WebVitals({ value, duration }:any) {
       >
         <motion.circle
           initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          whileInView={{ pathLength: value/100}}
+          animate={{ pathLength: value/100 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 2, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }}
           strokeWidth={7}
           strokeDasharray="0 1"
           strokeLinecap="round"

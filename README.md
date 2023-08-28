@@ -25,7 +25,7 @@ Get started commit of alfarnex startup agency website
         - Login []
     - Hero [x]
     - Our Story [x]
-    - Services []
+    - Services [x]
     - How we work []
     - Prices []
     - Testimonials []

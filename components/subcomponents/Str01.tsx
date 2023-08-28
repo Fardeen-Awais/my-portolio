@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef } from 'react'
 import WebVitals from '../ui/webvitals'
-import { motion, useInView } from 'framer-motion'
+import { motion} from 'framer-motion'
 import { slideAnimation } from '@/lib/motion'
 
 const Storyline01 = () => {
