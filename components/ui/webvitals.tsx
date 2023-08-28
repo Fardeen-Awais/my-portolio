@@ -33,7 +33,7 @@ export default function WebVitals({ value, duration }:any) {
       <CountingNumbers
         value={value}
         duration={duration}
-        className="relative p-10 mx-auto flex items-center justify-center font-medium text-4xl text-green-500 dark:text-green-600 "
+        className="relative p-8 my-5 sm:my-3 mx-auto flex items-center justify-center font-medium text-4xl text-green-500 dark:text-green-600 "
       />
     </div>
   );
