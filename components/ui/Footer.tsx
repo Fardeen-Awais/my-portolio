@@ -5,8 +5,8 @@ import Logo from "./Logo";
 
 const Footer = () => (
   <footer className='flex flex-col -black-100  mt-5 border-t border-gray-100'>
-    <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
-      <div className='flex flex-col justify-start items-start gap-6'>
+    <div className='flex flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
+      <div className='flex justify-start items-start gap-6'>
         <Logo/>
         <p className='text-base'>
           Alfarnex 2023 <br />
@@ -14,7 +14,7 @@ const Footer = () => (
         </p>
       </div>
 
-      <div className="footer__links-container">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-items-center mx-auto justify-items-center gap-x-10">
         {footerLinks.map((item) => (
           <div key={item.title} className="footer__link">
             <h3 className="font-bold">{item.title}</h3>

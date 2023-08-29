@@ -5,6 +5,7 @@ import { getDictionary } from '@/get-dictionary';
 import Loading from './loading';
 import Storyline from '@/components/Storyline';
 import Service from '@/components/Service';
+import HWW from '@/components/HWW';
 
 interface HomeProps {
   params: { lang: Locale };
@@ -15,13 +16,13 @@ export default async function Home({
 }: HomeProps) {
   const dictionary = await getDictionary(lang);
   const Herodata = dictionary.Hero;
-
-  // console.log(Herodata)
+  const servicejson= dictionary.Services
   return (
     <main className='bg-background text-foreground overflow-hidden'>
         <Hero Herodata={Herodata}/>
-        <Storyline/>
-        <Service />
+        <Storyline />
+        <Service servicejson={servicejson}/>
+        <HWW/>
     </main>
   );
 }

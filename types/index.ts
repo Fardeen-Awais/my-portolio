@@ -8,8 +8,12 @@ export interface HeroProps {
 }
 
 export interface ServiceProps {
-    id: string;
-    title: string;
-    description: string;
-    details: string;
-  }
+  servicejson: ServiceItem[];
+}
+
+export interface ServiceItem {
+  id: string;
+  title: string;
+  description: string;
+  details: string;
+}

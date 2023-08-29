@@ -12,11 +12,11 @@ const Hero : React.FC<HeroProps> = ({ Herodata }) =>  {
       <div className='flex flex-col gap-6'>
         <div>
           <h1 className='max-w-md sm:max-w-3xl'>{Herodata.title}</h1>
-          <p className='max-w-md'>Make your Buisness Web application with our best developers. Helping Buisnesses to get their website application with security.</p>
+          <p className='max-w-md'>{Herodata.description}</p>
         </div>
         <div className='flex gap-x-5'>
-          <Button>Get Started</Button>
-          <Button variant="outline">Explore Us</Button> {/* redirect to work:: that explain how we work  */}
+          <Button>{Herodata.getStartedButton}</Button>
+          <Button variant="outline">{Herodata.exploreButton}</Button> {/* redirect to work:: that explain how we work  */}
         </div>
       </div>
 
