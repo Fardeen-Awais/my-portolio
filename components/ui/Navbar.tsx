@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { HiLanguage } from 'react-icons/hi2'
 import { BiHomeAlt2 } from 'react-icons/bi'
@@ -9,8 +10,20 @@ import { SlDocs } from 'react-icons/sl'
 import Image from 'next/image'
 import { ModeToggle } from './Theme'
 import Logo from './Logo'
-
+import { SignInButton, UserButton } from '@clerk/nextjs'
+import { useUser } from '@clerk/nextjs'
 const Navbar = () => {
+
+  const { isSignedIn } = useUser();
+  
+  const [isMounted, setIsMounted] = useState(false) 
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+  if (!isMounted) {
+    return null;
+  }
+  
   return (
     <header className='sticky top-0 z-20 border-b border-transparent bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity duration-200 ease-in-out mx-auto md:px-5 h-20 flex items-center justify-between'>
       <nav className='flex justify-between items-center w-full py-4'>
@@ -48,11 +61,25 @@ const Navbar = () => {
 
         <div className='Customizer flex items-center  gap-x-5 px-3'>
           <div className='flex gap-x-5 items-center'>
-            {/* <div><HiLanguage className='h-5 w-5' /></div> */}
-            <div>Nothing</div>
             <div><ModeToggle /></div>
           </div>
-          <div className='hidden sm:flex'>Login</div>
+          <div>
+      <div className="hidden sm:flex">
+        {!isSignedIn && <SignInButton />}
+      </div>
+      <div className="hidden sm:flex">
+        {isSignedIn && (
+          <UserButton
+            afterSignOutUrl="/"
+            appearance={{
+              elements: {
+                avatarBox: "h-[48px] w-[48px]",
+              },
+            }}
+          />
+        )}
+      </div>
+    </div>
         </div>
       </nav>
     </header>
