@@ -1,9 +1,7 @@
 import { authMiddleware } from "@clerk/nextjs";
-export default authMiddleware({
-  // "/" will be accessible to all users
-  publicRoutes: ["/"]
-});
- 
+
+export default authMiddleware();
+
 export const config = {
-      matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
+  matcher: ['/store', '/(api|trpc)(.*)'],
 };

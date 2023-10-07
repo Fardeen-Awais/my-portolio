@@ -36,6 +36,7 @@ Todo: Auth completed with activating some public route
     - Hero [x]
         - Adding Text highlighter []
     - Our Story [x]
+        - Changing the progress Bar []
     - Services [x]
     - How we work []
     - Prices []
