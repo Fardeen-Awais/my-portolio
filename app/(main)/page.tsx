@@ -8,7 +8,7 @@ import HWW from '@/components/HWW';
 
 export default async function Home() {
   return (
-    <main className='bg-background text-foreground overflow-hidden'>
+    <main className='bg-background text-foreground overflow-hidden min-h-screen'>
         <Hero />
         <Storyline />
         <Service />
