@@ -1,27 +1,17 @@
 import React from 'react';
-// import { ServicesData } from '@/constant';
-import Image from 'next/image';
-import vercel from '../public/vercel.svg';
-import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardDescription,
-    CardContent,
-    CardFooter
-} from '@/components/ui/card';
-import BrowseCategory from './BrowseCategory';
+import BrowseCategoryDesktop from './BrowseServices/BrowseCategoryDesktop';
+import BrowseCategoryMobile from './BrowseServices/BrowseCategoryMobile';
 
 const Service = () => {
     return (
         <section className='flex flex-col gap-5 w-full justify-start items-center min-h-screen mx-auto '>
-            <div className='flex flex-col justify-center items-center max-w-xl text-center'>
+            <div className='flex flex-col justify-center items-center max-w-xl text-center px-5'>
                 <h2>Our Services</h2>
                 <p>Brands Design provides one-stop solution and services to small and medium-sized businesses and services to turn audiences into clients.</p>
             </div>
             <div className='flex m-10'>
-
-                <BrowseCategory/>
+                <BrowseCategoryDesktop/>
+                <BrowseCategoryMobile/>
             </div>
         </section>
     );

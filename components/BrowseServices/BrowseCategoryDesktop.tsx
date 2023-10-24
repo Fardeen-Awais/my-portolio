@@ -1,15 +1,16 @@
 import React from 'react'
-import { Separator } from './ui/separator'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
-import { ScrollArea } from './ui/scroll-area'
+import { Separator } from '../ui/separator'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs'
+import { ScrollArea } from '../ui/scroll-area'
 import { HomeIcon } from 'lucide-react'
 import { BiLeftArrow } from 'react-icons/bi'
-import { Button } from './ui/button'
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
+import { Button } from '../ui/button'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
 
-const BrowseCategory = () => {
+const BrowseCategoryDesktop = () => {
     return (
-        <Tabs defaultValue={'account'} className='sm:flex hidden bg-white dark:bg-gray-900 min-h-screen rounded-xl bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity border-2 border-green-500 dark:border-green-300  browserborder shadow-lg'>
+        
+        <Tabs defaultValue={'account'} className='sm:flex hidden bg-white dark:bg-gray-900 min-h-screen rounded-xl bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity border-2 border-green-500 dark:border-green-300  browserborder shadow-lg mx-3'>
             <div className='flex flex-col border border-transparent border-r-gray-300 w-[300px]  '>
                 <div className='flex flex-col max-w-lg px-8'>
                     <h2>Browse our catalog of agencies.</h2>
@@ -63,6 +64,30 @@ const BrowseCategory = () => {
                     <Button className='p-6'>
                         Web Developement
                     </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
+                    <Button className='p-6'>
+                        Web Developement
+                    </Button>
                 </TabsContent>
                 <TabsContent value="password">Change your password here.</TabsContent>
             </ScrollArea>
@@ -72,4 +97,4 @@ const BrowseCategory = () => {
     )
 }
 
-export default BrowseCategory
+export default BrowseCategoryDesktop
