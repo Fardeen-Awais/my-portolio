@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Separator } from '../ui/separator'
 import { TabsContent, TabsList, TabsTrigger } from '../ui/tabs'
 import { ScrollArea } from '../ui/scroll-area'
@@ -10,6 +10,15 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Button } from '../ui/button'
 
 const BrowseCategoryMobile = () => {
+    const [isMounted, setIsMounted] = useState(false) // By setting isMounted to false initially and then setting it to true in the useEffect hook, the component returns null if it hasn't been mounted yet. This ensures that the component is not rendered on the server and avoids the hydration error. Once the component is mounted on the client, it will be rendered as usual.
+    useEffect(() => {
+        setIsMounted(true)
+      }, [])
+
+      if (!isMounted) {
+        return null;
+      }
+      
     return (
         <Tabs defaultValue={'account'} className='sm:hidden flex bg-white dark:bg-gray-900 min-h-screen rounded-xl bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity border-2 border-green-500 dark:border-green-300  browserborder shadow-lg'>
             <div className='flex flex-col border border-transparent border-r-gray-300 w-[300px]  '>
