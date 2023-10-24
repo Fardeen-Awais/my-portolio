@@ -12,7 +12,7 @@ const Storyline01 = () => {
         <h2>Welcome to Alfarnex</h2>
         <p className='text-center'>{`Hi There 👋 We are helping business to without top class developers and Designers. We can relief a lot of your Business Stress 😩`}</p>
       </div>
-      <div className='flex flex-col md:flex-row items-center justify-center gap-10 px-4 py-8 bg-opacity-50 shadow-md backdrop-blur-[4px] backdrop-filter transition-opacity duration-200 ease-in-out '>
+      <div className='flex flex-col md:flex-row items-center justify-center gap-10 px-4 py-8 bg-opacity-50 shadow-lg backdrop-blur-[4px] backdrop-filter transition-opacity duration-200 ease-in-out rounded-2xl'>
         <div>
         <WebVitals value={90} duration={2500}/>
         </div>

@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import Hero from '@/components/Hero';
 import Storyline from '@/components/Storyline';
 import Service from '@/components/Service';
-import HWW from '@/components/HWW';
+import Process from '@/components/Process';
 
 
 
@@ -12,7 +12,7 @@ export default async function Home() {
         <Hero />
         <Storyline />
         <Service />
-        {/* <HWW/> */}
+        <Process/>
     </main>
   );
 }

@@ -39,10 +39,11 @@ Todo: Auth completed with activating some public route
         - Changing the progress Bar []
     - Services [x]
     - How we work []
-    - Prices []
+    - Why our customer enjoy
+    - Blog section []
     - Testimonials []
+    - Get started or Price []
     - Footer []
-    - Overall availabilty Price []
 - Services []
     - Will display price of every service
 - Our Work []
@@ -55,6 +56,12 @@ Todo: Auth completed with activating some public route
 ### Commit details
 
 Get started commit
+
+- Light mode and Dark mode completed ([commit 4f5bac8d1f789a53b7c053c1cbd10547db8c41a3](https://github.com/Fardeen-Awais/Alfarnex.com/commit/4f5bac8d1f789a53b7c053c1cbd10547db8c41a3))
+
+- Navbar and Hero Section is completed ([commit d84e970c5ac131bac1a928570bbd555f13cb11a4](https://github.com/Fardeen-Awais/Alfarnex.com/commit/d84e970c5ac131bac1a928570bbd555f13cb11a4))
+
+- Browse Service component is completed ([commit ffd2f7735bea286d733efc156155bb642c10d328](https://github.com/Fardeen-Awais/Alfarnex.com/commit/ffd2f7735bea286d733efc156155bb642c10d328))
 
 ### Authors
 - Fardeen Founder of Alfarnex
