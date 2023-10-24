@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Storyline from '@/components/Storyline';
 import Service from '@/components/Service';
 import Process from '@/components/Process';
+import { ShadowProvider } from '@/providers/ScrollShadowProvider';
 
 
 

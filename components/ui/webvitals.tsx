@@ -1,16 +1,14 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import CountingNumbers from "../subcomponents/counting-numbers";
-import { useEffect, useRef, useState } from "react";
+import { useInView } from "framer-motion";
+import { useRef, useState } from "react";
 import { CircularProgress } from "@nextui-org/react";
 
-export default function WebVitals({ value, duration }: any) {
+const WebVitals = ({ value, duration }:any)=> {
   const [values, setValue] = useState(value);
   const ref = useRef(null)
   const isInView = useInView(ref)
 
-  
   if (isInView === true) { // I want to 
     const interval = setInterval(() => {
       setValue((v: any) => (v >= values ? values : v + 10));
@@ -18,18 +16,19 @@ export default function WebVitals({ value, duration }: any) {
     return () => clearInterval(interval);
   }
 
-
-
   return (
     <div className="relative h-full w-full">
       <CircularProgress
       ref={ref}
         aria-label="Loading..."
-        classNames={{
-          svg: "w-36 h-36 drop-shadow-md",
+        classNames={
+          {
+          svg: "w-36 h-36 drop-shadow-md ",
           track: "stroke-black/10",
           value: "text-3xl font-semibold text-green-900 dark:text-green-300",
-        }}
+          indicator: "shadow-xl",
+        }
+      }
         size="lg"
         value={values}
         color="success"
@@ -38,3 +37,5 @@ export default function WebVitals({ value, duration }: any) {
     </div>
   );
 }
+
+export default WebVitals;
