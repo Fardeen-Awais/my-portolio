@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { CircularProgress } from "@nextui-org/react";
 
-const WebVitals = ({ value, duration }:any)=> {
+const WebVitals = ({ value, duration }: any) => {
   const [values, setValue] = useState(value);
   const ref = useRef(null)
   const isInView = useInView(ref)
@@ -19,16 +19,16 @@ const WebVitals = ({ value, duration }:any)=> {
   return (
     <div className="relative h-full w-full">
       <CircularProgress
-      ref={ref}
+        ref={ref}
         aria-label="Loading..."
         classNames={
           {
-          svg: "w-36 h-36 drop-shadow-md ",
-          track: "stroke-black/10",
-          value: "text-3xl font-semibold text-green-900 dark:text-green-300",
-          indicator: "shadow-xl",
+            svg: "w-36 h-36 drop-shadow-md ",
+            track: "stroke-black/10",
+            value: "text-3xl font-semibold text-green-900 dark:text-green-300",
+            indicator: "shadow-xl",
+          }
         }
-      }
         size="lg"
         value={values}
         color="success"
