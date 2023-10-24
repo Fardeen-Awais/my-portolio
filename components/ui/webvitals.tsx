@@ -1,38 +1,39 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import CountingNumbers from "../subcomponents/counting-numbers";
+import { useEffect, useRef, useState } from "react";
+import { CircularProgress } from "@nextui-org/react";
 
-export default function WebVitals({ value, duration }:any) {
-   
+export default function WebVitals({ value, duration }: any) {
+  const [values, setValue] = useState(value);
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  
+  if (isInView === true) { // I want to 
+    const interval = setInterval(() => {
+      setValue((v: any) => (v >= values ? values : v + 10));
+    }, duration);
+    return () => clearInterval(interval);
+  }
+
+
+
   return (
     <div className="relative h-full w-full">
-      <motion.svg
-        className="absolute inset-0 m-auto"
-        viewBox="0 0 100 100"
-        width={140}
-        height={140}
-      >
-        <motion.circle
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: value/100 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          strokeWidth={7}
-          strokeDasharray="0 1"
-          strokeLinecap="round"
-          transform="rotate(-90 50 50)"
-          cx="50"
-          cy="50"
-          r="45"
-          fill="#DCFCE7"
-          stroke="#22C55E"
-        />
-      </motion.svg>
-      <CountingNumbers
-        value={value}
-        duration={duration}
-        className="relative p-8 my-5 sm:my-3 mx-auto flex items-center justify-center font-medium text-4xl text-green-500 dark:text-green-600 "
+      <CircularProgress
+      ref={ref}
+        aria-label="Loading..."
+        classNames={{
+          svg: "w-36 h-36 drop-shadow-md",
+          track: "stroke-black/10",
+          value: "text-3xl font-semibold text-green-900 dark:text-green-300",
+        }}
+        size="lg"
+        value={values}
+        color="success"
+        showValueLabel={true}
       />
     </div>
   );
