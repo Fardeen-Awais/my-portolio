@@ -1,16 +1,18 @@
-
+'use client'
 import React from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
 import HeroImage from "public/hero.webp"
-
+import Highlighter from '@/hook/Highligher'
+import { themeChecker } from '@/hook/global-state'
 const Hero = () => {
+  const checker = themeChecker()
   return (
     <section
-      className='flex flex-col sm:flex-row justify-evenly sm:justify-between items-center max-w-7xl mx-auto p-5 sm:p-10 gap-10 min-h-screen w-full'>
+       className='flex flex-col sm:flex-row justify-evenly sm:justify-between items-center max-w-7xl mx-auto p-5 sm:p-10 gap-10 min-h-screen w-full'>
       <div className='flex flex-col gap-6'>
         <div>
-          <h1 className='max-w-md sm:max-w-3xl'>Web Agency for Developing Buisness</h1>
+          <h1 className='max-w-md sm:max-w-3xl'><Highlighter color={`${checker === 'dark' ? 'green' : 'lightgreen'}`}  type="highlight" >Web Agency</Highlighter> for Developing Buisness</h1>
           <p className='max-w-md'>Make your Business Web application with our best developers. Helping Businesses to get their website application with security.</p>
         </div>
         <div className='flex gap-x-5'>
@@ -33,8 +35,9 @@ const Hero = () => {
           style={{
             objectFit: "cover",
           }}
-        />
+          />
       </div>
+          
     </section>
 
   )

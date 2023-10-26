@@ -6,10 +6,10 @@ const MainLayout = async ({ children }: { children: React.ReactNode }) => {
     return (
         <main>
             <Navbar />
-            <ShadowProvider>
+            {/* <ShadowProvider> */}
                 {children}
+            {/* </ShadowProvider> */}
             <Footer />
-            </ShadowProvider>
         </main>
     )
 }
