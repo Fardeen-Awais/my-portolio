@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Storyline from '@/components/Storyline';
 import Service from '@/components/Service';
 import Process from '@/components/Process';
+import CustomerFeedback from '@/components/CustomerFeedback';
 
 
 
@@ -13,6 +14,7 @@ export default async function Home() {
         <Storyline />
         <Service />
         <Process/>
+        <CustomerFeedback/>
     </main>
   );
 }

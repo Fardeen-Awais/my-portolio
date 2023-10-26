@@ -38,12 +38,13 @@ Todo: Auth completed with activating some public route
     - Our Story [x]
         - Changing the progress Bar []
     - Services [x]
-    - How we work []
-    - Why our customer enjoy
+    - How we work [x]
+    - Why our customer enjoy []
     - Blog section []
     - Testimonials []
     - Get started or Price []
     - Footer []
+    - Liveblock cursor collab [] (optional)
 - Services []
     - Will display price of every service
 - Our Work []
