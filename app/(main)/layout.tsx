@@ -7,9 +7,9 @@ const MainLayout = async ({ children }: { children: React.ReactNode }) => {
         <main>
             <Navbar />
             <ShadowProvider>
-            {children}
-            </ShadowProvider>
+                {children}
             <Footer />
+            </ShadowProvider>
         </main>
     )
 }

@@ -44,9 +44,9 @@ const BrowseCategoryMobile = () => {
                                 </SheetTrigger>
                             </ScrollArea>
 
-                            <SheetContent side={'bottom'} className="w-[350px] h-screen mx-auto p-10">
+                            <SheetContent side={'bottom'} className="w-full flex flex-col h-screen mx-auto ">
                                 <SheetHeader>
-                                    <SheetTitle>Value: Software Developement</SheetTitle>
+                                    <SheetTitle>Software Developement</SheetTitle>
                                 </SheetHeader>
                                 {/* Part2 */}
                                 <SheetDescription>

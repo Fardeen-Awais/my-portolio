@@ -7,8 +7,8 @@ import { slideAnimation } from '@/lib/motion'
 const Storyline01 = () => {
 
   return (
-    <motion.div variants={slideAnimation("left")} initial="initial" exit="exit" whileInView="animate" className='flex flex-col gap-8 max-w-7xl justify-center items-center min-h-screen px-5 '>
-      <div className='flex flex-col justify-center items-center max-w-xl p-4'>
+    <div className='flex flex-col gap-8 max-w-7xl justify-center items-center min-h-screen px-5 '>
+      <div className='flex flex-col justify-center items-center max-w-xl text-center'>
         <h2>Welcome to Alfarnex</h2>
         <p className='text-center'>{`Hi There 👋 We are helping business to without top class developers and Designers. We can relief a lot of your Business Stress 😩`}</p>
       </div>
@@ -18,7 +18,7 @@ const Storyline01 = () => {
         </div>
         <p className='max-w-md'>{`We make interactive web applications that result to increase of more than 80% of Success 🎉`}</p>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

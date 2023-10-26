@@ -23,7 +23,7 @@ const WebVitals = ({ value}:any)=> {
         aria-label="Loading..."
         classNames={
           {
-          svg: "w-36 h-36 drop-shadow-md ",
+          svg: "w-36 h-36 drop-shadow-md text-green-300",
           track: "stroke-black/10",
           value: "text-3xl font-semibold text-green-900 dark:text-green-300",
           indicator: "shadow-xl",
