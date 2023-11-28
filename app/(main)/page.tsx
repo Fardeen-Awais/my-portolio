@@ -9,6 +9,7 @@ import Seperator from './_components/Seperator';
 import Skills from './_components/Skills/Skills';
 import SoftSkills from './_components/Skills/SoftSkills';
 import Projects from './_components/Project';
+import Footer from './_components/Footer';
 
 
 export default async function Home() {

@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import StarsCanvas from '@/components/StarBackground'
+import Footer from './(main)/_components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -33,6 +34,8 @@ export default function RootLayout({
             <NextUIProviders>
               <Navbar/>
                 {children}
+                
+        <Footer/>
             </NextUIProviders>
           </ThemeProvider>
         </body>

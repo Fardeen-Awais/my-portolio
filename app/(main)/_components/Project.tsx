@@ -4,7 +4,7 @@ import React from 'react'
 import { ProjectData } from "@/app/constant";
 const Projects = () => {
     return (
-        <div className='h-screen flex flex-col justify-start items-center max-w-7xl mx-auto gap-10 px-5'>
+        <div className='min-h-screen flex flex-col justify-start items-center max-w-7xl mx-auto gap-10 px-5 py-20'>
             {/* <Card/> */}
             {/* <div className='flex flex-col items-center justify-center gap-8'> */}
             <div className='flex flex-col justify-center items-center gap-3'>
