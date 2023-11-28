@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/Hero.module.css'
+import styles from '../styles/Hero.module.css'
 import NextImage from 'next/image'
 import { Button, ButtonGroup, Image } from "@nextui-org/react";
 const Hero = () => {

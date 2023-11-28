@@ -8,6 +8,7 @@ import OurGoal from './_components/OurGoal';
 import Seperator from './_components/Seperator';
 import Skills from './_components/Skills/Skills';
 import SoftSkills from './_components/Skills/SoftSkills';
+import Projects from './_components/Project';
 
 
 export default async function Home() {
@@ -24,7 +25,7 @@ export default async function Home() {
         <Skills/>
         <SoftSkills/>
         <Seperator/>
-      {/* <Projects /> */}
+        <Projects />
       {/* <Encryption /> */}
       </div>
     </main>

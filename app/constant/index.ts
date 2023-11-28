@@ -256,11 +256,35 @@ export const Full_stack = [
   
   
   
-  export const Other_skill = [
+export const Other_skill = [
     {
       skill_name: "Go",
       Image: "/skills/go.png",
       width: 60,
       height: 60,
     },
-  ];
+];
+
+export const ProjectData = [
+    {
+        name: "Discord Clone",
+        domain:"Discord.com",
+        desc:"I make discord clone from scratch with next.js 14, clerk, mySQL with planetscale with all discord functionalities.",
+        img: "/projects/discord.png",
+        href: "https://discord.com/",
+    },
+    {
+        name: "LMS System",
+        domain:"LMS.com",
+        desc:"I make an Learning Management System to sell out my courses with my team online with all the selling features.",
+        img: "/projects/lms.jpg",
+        href: "https://discord.com/",
+    },
+    {
+        name: "Alfarnex",
+        domain:"Alfarnex.com",
+        desc:"My official Startup Project for selling my web app services and giving clients to software houses as well. It's fully responsive and fully functional. ",
+        img: "/projects/startup.avif",
+        href: "https://discord.com/",
+    }
+]
