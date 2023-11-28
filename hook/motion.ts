@@ -1,70 +1,78 @@
-export const transition = { type: "spring", duration: 0.8 };
-
-export const slideAnimation = (direction:string) => {
+export function slideInFromLeft(delay: number) {
   return {
-    initial: {
-      x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -400 : 0,
-      opacity: 0,
-      transition: { ...transition, delay: 0.4 },
-    },
-    animate: {
+    hidden: { x: -100, opacity: 0 },
+    visible: {
       x: 0,
-      y: 0,
       opacity: 1,
-      transition: { ...transition, delay: 0.1 },
-    },
-    exit: {
-      x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -200 : 0,
-      transition: { ...transition, delay: 0.1 },
+      transition: {
+        delay: delay,
+        duration: 0.5,
+      },
     },
   };
-};
+}
 
-export const fadeAnimation = {
-  initial: {
-    opacity: 0,
-    transition: { ...transition, delay: 0.5 },
-  },
-  animate: {
+export function slideInFromRight(delay: number) {
+  return {
+    hidden: { x: 100, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: delay,
+        duration: 0.5,
+      },
+    },
+  };
+}
+
+export const slideInFromTop = {
+  hidden: { y: -100, opacity: 0 },
+  visible: {
+    y: 0,
     opacity: 1,
-    transition: { ...transition, delay: 0 },
-  },
-  exit: {
-    opacity: 0,
-    transition: { ...transition, delay: 0 },
-  },
-};
-
-export const headTextAnimation = {
-  initial: { x: 100, opacity: 0 },
-  animate: { x: 0, opacity: 1 },
-  transition: {
-    type: "spring",
-    damping: 5,
-    stiffness: 40,
-    restDelta: 0.001,
-    duration: 0.3,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+    },
   },
 };
 
-export const headContentAnimation = {
-  initial: { y: 100, opacity: 0 },
-  animate: { y: 0, opacity: 1 },
-  transition: {
-    type: "spring",
-    damping: 7,
-    stiffness: 30,
-    restDelta: 0.001,
-    duration: 0.6,
-    delay: 0.2,
-    delayChildren: 0.2,
+export const Full_stack = [
+  {
+    skill_name: "React Native",
+    Image: "/ReactNative .png",
+    width: 70,
+    height: 70,
   },
-};
+  {
+    skill_name: "Tauri",
+    Image: "/tauri.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Docker",
+    Image: "/docker.webp",
+    width: 70,
+    height: 70,
+  },
 
-export const headContainerAnimation = {
-  initial: { x: -100, opacity: 0, transition: { ...transition, delay: 0.5 } },
-  animate: { x: 0, opacity: 1, transition: { ...transition, delay: 0 } },
-  exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } },
-};
+  {
+    skill_name: "Figma",
+    Image: "/figma.png",
+    width: 50,
+    height: 50,
+  },
+
+];
+
+
+export const Other_skill = [
+  {
+    skill_name: "Go",
+    Image: "/go.png",
+    width: 60,
+    height: 60,
+  },
+];

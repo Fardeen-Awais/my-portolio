@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Hero.module.css'
+import styles from './styles/Hero.module.css'
 import NextImage from 'next/image'
 import { Button, ButtonGroup, Image } from "@nextui-org/react";
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
 
             <div className='w-80 h-80 md:w-96 md:h-96'>
-                <Image as={NextImage} src={'/assets/Icons.png'} alt='hero' width={350} height={350} />
+                <Image as={NextImage} src={'/assets/Icons.png'} alt='hero' width={350} height={350} quality={100}/>
             </div>
             <div>
             </div>
