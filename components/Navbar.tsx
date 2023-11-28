@@ -19,13 +19,14 @@ const Navbar = () => {
         <header className='sticky top-0 z-20 border-b border-transparent bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity duration-200 ease-in-out mx-auto md:px-5 h-20 flex items-center justify-between  '>
             <nav className='flex justify-between items-center w-full p-10 '>
                 {/* Logo */}
-                <Avatar src={ProfileImage.url} size="lg" />
+                <Avatar src={ProfileImage.url} className='w-12 h-12' />
                 {/* Social Icon */}
                 <div className='flex gap-3'>
                     {Social_url.map((social) => (
-                        <div key={social.alt}>
+                        <div key={social.alt} className='opacity-80 hover:opacity-100 transition-all'>
                             {/* <Link></Link> */}
                             <Image
+                                className='cursor-pointer'
                                 src={social.url}
                                 as={NextImage}
                                 width={25}
