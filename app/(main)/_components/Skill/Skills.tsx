@@ -2,8 +2,6 @@ import { Backend_skill, Frontend_skill, Skill_data, Full_stack, Other_skill } fr
 import React from "react";
 import SkillDataProvider from "./SkillProvider";
 import SkillText from "./SkillText";
-import SoftSkills from "./SoftSkills";
-import Image from "next/image";
 
 const Skills = () => {
   return (
