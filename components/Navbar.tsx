@@ -7,14 +7,6 @@ import NextImage from "next/image";
 import { Social_url } from '@/app/constant';
 import { ProfileImage } from '@/app/constant';
 const Navbar = () => {
-    // const [isMounted, setIsMounted] = useState(false)
-    // useEffect(() => {
-    //     setIsMounted(true)
-    // }, [])
-    // if (!isMounted) {
-    //     return null;
-    // }
-
     return (
         <header className='sticky top-0 z-20 border-b border-transparent bg-opacity-80 backdrop-blur-[4px] backdrop-filter transition-opacity duration-200 ease-in-out mx-auto md:px-5 h-20 flex items-center justify-between  '>
             <nav className='flex justify-between items-center w-full p-10 '>

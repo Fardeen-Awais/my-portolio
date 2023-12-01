@@ -1,5 +1,4 @@
 import React from 'react'
-import CodeCard from './CodeCard'
 import { Image } from '@nextui-org/react'
 import NextImage from 'next/image'
 
@@ -14,7 +13,7 @@ const OurGoal = () => {
                     </p>
                 </div>
                 <div className='max-w-screen-md'>
-                    <Image as={NextImage} src={'/assets/GoalGroup.png'} alt='hero' width={2000} height={2000} isBlurred />
+                    <Image as={NextImage} src={'/assets/GoalGroup.avif'} alt='hero' width={2000} height={2000} isBlurred />
                 </div>
             </div>
 

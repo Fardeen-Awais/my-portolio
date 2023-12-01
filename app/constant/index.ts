@@ -1,4 +1,3 @@
-import Grid from '/assets/Grid.svg'
 export const Social_url = [
     {
         url: '/Icons/Social_Icons_0.svg',
@@ -23,7 +22,7 @@ export const Social_url = [
 ];
 
 export const ProfileImage = {
-    url: '/assets/Logo.jpg',
+    url: '/assets/Logo.png',
     alt: 'Logo Image',
 }
 

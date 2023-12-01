@@ -18,7 +18,7 @@ const Projects = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 {ProjectData.map((project) => {
                     return (
-                        <Card className="max-w-[400px]">
+                        <Card key={project.name} className="max-w-[400px]">
                             <CardHeader className="flex gap-3">
                                 <Image
                                     alt="nextui logo"
