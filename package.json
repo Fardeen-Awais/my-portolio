@@ -49,5 +49,8 @@
     "typescript": "5.1.6",
     "valtio": "^1.11.3",
     "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4"
   }
 }

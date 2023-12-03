@@ -16,16 +16,17 @@ const Navbar = () => {
                 <div className='flex gap-3'>
                     {Social_url.map((social) => (
                         <div key={social.alt} className='opacity-80 hover:opacity-100 transition-all'>
-                            {/* <Link></Link> */}
-                            <Image
-                                className='cursor-pointer'
-                                src={social.url}
-                                as={NextImage}
-                                width={25}
-                                height={25}
-                                alt={social.alt}
-                                isBlurred
-                            />
+                            <Link href={social.href} target="_blank">
+                                <Image
+                                    className='cursor-pointer'
+                                    src={social.url}
+                                    as={NextImage}
+                                    width={25}
+                                    height={25}
+                                    alt={social.alt}
+                                    isBlurred
+                                />
+                            </Link>
                         </div>
                     ))}
                 </div>

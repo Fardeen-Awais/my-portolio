@@ -1,28 +1,28 @@
 export const Social_url = [
     {
         url: '/Icons/Social_Icons_0.svg',
-        alt: 'Image 1',
-        href: 'https://example.com/image1'
+        alt: 'My Discord Profile',
+        href: 'https://discordapp.com/users/fardeenawais'
     },
     {
         url: 'Icons/Social_Icons_1.svg',
-        alt: 'Image 2',
-        href: 'https://example.com/image2'
+        alt: 'My Page in X (twitter)',
+        href: 'https://twitter.com/alfarnex'
     },
     {
         url: 'Icons/Social_Icons_2.svg',
-        alt: 'Image 3',
-        href: 'https://example.com/image3'
+        alt: 'My Github Account',
+        href: 'https://github.com/Fardeen-Awais'
     },
     {
         url: 'Icons/Social_Icons_3.svg',
-        alt: 'Image 4',
-        href: 'https://example.com/image4'
+        alt: 'My Linkedin Account',
+        href: 'https://www.linkedin.com/in/fardeen-awais-b464b1200/'
     }
 ];
 
 export const ProfileImage = {
-    url: '/assets/Logo.png',
+    url: '/assets/logo.png',
     alt: 'Logo Image',
 }
 
@@ -270,20 +270,23 @@ export const ProjectData = [
         domain:"Discord.com",
         desc:"I make discord clone from scratch with next.js 14, clerk, mySQL with planetscale with all discord functionalities.",
         img: "/projects/discord.png",
-        href: "https://discord.com/",
+        href: "https://discord-app-tan.vercel.app/",
+        status: "completed",
     },
     {
         name: "LMS System",
         domain:"LMS.com",
         desc:"I make an Learning Management System to sell out my courses with my team online with all the selling features.",
         img: "/projects/lms.jpg",
-        href: "https://discord.com/",
+        href: "",
+        status: "completed",
     },
     {
         name: "Alfarnex",
         domain:"Alfarnex.com",
         desc:"My official Startup Project for selling my web app services and giving clients to software houses as well. It's fully responsive and fully functional. ",
         img: "/projects/startup.avif",
-        href: "https://discord.com/",
+        href: "",
+        status: "Progress",
     }
 ]

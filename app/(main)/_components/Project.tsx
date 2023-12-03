@@ -34,18 +34,23 @@ const Projects = () => {
                             </CardHeader>
                             <Divider />
                             <CardBody>
-                                <p className="p-3 text-lg md:text-md text-[#EFF5FFB3]">{project.desc}</p>
+                                <p className="p-3 text-lg md:text-md text-[#EFF5FFB3] line-clamp-4">{project.desc}</p>
                             </CardBody>
                             <Divider />
                             <CardFooter>
-                                <Link
-                                    isExternal
-                                    showAnchorIcon
-                                    href={project.href}
-                                    className="underline opacity-80 text-sm hover:opacity-100 transition-opacity"
-                                >
-                                    Visit Live Demo
-                                </Link>
+                                <div className="flex justify-between w-full px-3">
+                                    <Link
+                                        isExternal
+                                        showAnchorIcon
+                                        href={project.href}
+                                        className="underline opacity-80 text-sm hover:opacity-100 transition-opacity"
+                                    >
+                                        Visit Live Demo
+                                    </Link>
+                               {project.status=='completed'? (
+                                   <div className="text-green-400">Completed</div>
+                               ): <div>In Progress</div> }
+                                </div>
                             </CardFooter>
                         </Card>
                     )
