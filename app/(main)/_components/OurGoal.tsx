@@ -13,7 +13,7 @@ const OurGoal = () => {
                     </p>
                 </div>
                 <div className='max-w-screen-md'>
-                    <Image as={NextImage} src={'/assets/GoalGroup.avif'} alt='hero' width={2000} height={2000} isBlurred />
+                    <Image as={NextImage} src={'/assets/GoalGroup.avif'} alt='hero' width={1500} height={1500} quality={70} isBlurred priority  />
                 </div>
             </div>
 

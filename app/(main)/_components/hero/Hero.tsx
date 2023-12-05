@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
 
             <div className='w-80 h-80 md:w-96 md:h-96'>
-                <Image as={NextImage} src={'/assets/Icons.png'} alt='hero' width={350} height={350} quality={100}/>
+                <Image as={NextImage} src={'/assets/Icons.png'} alt='hero' width={350} height={350} quality={100} priority/>
             </div>
             <div>
             </div>
