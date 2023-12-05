@@ -2,7 +2,7 @@ import React from 'react'
 
 const Story = () => {
   return (
-    <div className='flex justify-center items-start min-h-screen max-w-7xl mx-auto px-5'>
+    <div className='flex justify-center items-start h-screen max-w-7xl mx-auto px-5'>
       <div className='flex flex-col items-center justify-center gap-5'>
         <h2 className='font-medium text-3xl text-[#fcfdffef]'>My Story</h2>
         <p className='max-w-sm md:max-w-md text-[#EFF5FFB0]'>

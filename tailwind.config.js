@@ -75,5 +75,5 @@ module.exports = {
       },
     },
   },
-  plugins: [nextui(),require("tailwindcss-animate"),require('@tailwindcss/typography'),require('@tailwindcss/line-clamp'),],
+  plugins: [nextui(),require("tailwindcss-animate"),require('@tailwindcss/typography'),],
 }

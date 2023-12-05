@@ -4,7 +4,7 @@ import NextImage from 'next/image'
 
 const OurGoal = () => {
     return (
-        <div className='flex flex-col justify-center items-start min-h-screen max-w-7xl mx-auto px-5'>
+        <div className='flex flex-col justify-center items-start  max-w-7xl mx-auto px-5'>
             <div className='flex flex-col items-center justify-center gap-8'>
                 <div className='flex flex-col justify-center items-center gap-3'>
                     <h2 className='font-medium text-3xl text-[#fcfdffef]'>What I believe</h2>
