@@ -27,7 +27,7 @@ export const Social_url = [
 ];
 
 export const ProfileImage = {
-    url: '/assets/logo.png',
+    url: '/assets/logo.jpeg',
     alt: 'Logo Image',
 }
 

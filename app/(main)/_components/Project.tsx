@@ -1,4 +1,3 @@
-'use client'
 import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
 import React from 'react'
 import { ProjectData } from "@/app/constant";

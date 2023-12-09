@@ -31,10 +31,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NextUIProviders>
-            <Navbar />
+            {/* <Navbar /> */}
+            
             {children}
 
-            <Footer />
+            {/* <Footer /> */}
           </NextUIProviders>
         </ThemeProvider>
       </body>
