@@ -14,7 +14,7 @@ const Projects = () => {
                 {/* </div> */}
             </div>
             {/* Name, Domain, desc, href, imageUrl  */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {ProjectData.map((project) => {
                     return (
                         <Card key={project.name} className="max-w-[400px]">
@@ -32,8 +32,8 @@ const Projects = () => {
                                 </div>
                             </CardHeader>
                             <Divider />
-                            <CardBody>
-                                <p className="p-3 text-lg md:text-md text-[#EFF5FFB3] line-clamp-4">{project.desc}</p>
+                            <CardBody className="p-5 text-sm text-[#EFF5FFB3] line-clamp-4">
+                                {project.desc}
                             </CardBody>
                             <Divider />
                             <CardFooter>
