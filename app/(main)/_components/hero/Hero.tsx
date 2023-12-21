@@ -13,9 +13,9 @@ const Hero = () => {
                 <p className='text-[#EFF5FFB0] sm:max-w-sm md:text-lg text-base'>I’m a Full stack developer emerging with Next.js and modern Development  experience. Empowering your developers team.</p>
 
                 <div className='flex gap-5'>
-                    {/* <Link target='_blank' href={'https://wa.me/923244028456'}>
+                    {/* <Link target='_blank' href={''}>
                      */}
-                    <Link target='_blank' href={'https://discordapp.com/users/fardeenawais'}>
+                    <Link target='_blank' href={'https://wa.me/923244028456'}>
                         <Button variant='solid' color='default' className='border border-green-600' size='lg' radius='sm'>Talk Now</Button>
                     </Link>
                     <Link href={'#about'}><Button variant='faded' className='border border-white bg-transparent ' size='lg' radius='sm'>About Me</Button></Link>
