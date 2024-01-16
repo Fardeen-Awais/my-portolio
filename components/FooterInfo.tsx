@@ -12,7 +12,7 @@ const FooterInfo = () => {
     const [loading, setLoading] = useState(false);
 
     const onCopy = () => {
-        navigator.clipboard.writeText('fardeenjutt99@gmail.com'); // This copies the invite url from above variable
+        navigator.clipboard.writeText('fardeen@houseofstartup.com'); // This copies the invite url from above variable
         setCopied(true);
         setTimeout(() => {
             setCopied(false);

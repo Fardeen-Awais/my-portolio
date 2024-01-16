@@ -13,7 +13,7 @@ import StarsCanvas from '@/components/StarBackground';
 
 export default async function Home() {
   return (
-    <main className="h-full w-full ">
+    <main className="h-full w-full bg-background text-foreground">
       <StarsCanvas />
       <div className="flex flex-col gap-20 -z-30">
         <Image src={gridImage.url} alt='hero' width={1000} height={1000} className='w-full h-full absolute overflow-hidden z-0' />
